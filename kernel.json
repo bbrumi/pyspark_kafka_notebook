@@ -1,0 +1,16 @@
+{
+ "argv": [
+  "/opt/conda/bin/python",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+"env": {
+   "SPARK_HOME": "/usr/local/spark",
+   "PYTHONPATH": "/usr/local/spark/python/:/usr/local/spark/python/lib/py4j-0.10.7-src.zip",
+   "PYSPARK_SUBMIT_ARGS": "--packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.4,org.apache.kafka:kafka-clients:2.0.0 pyspark-shell"
+ },
+ "display_name": "Python 3",
+ "language": "python"
+}
